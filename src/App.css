@@ -502,10 +502,14 @@ border-radius: 30px !important;
   
 margin-left: 50px;
 }*/
-.productitem .info .netprice{
+ .info .netprice{
   margin-left: 8px;
   font-weight: 600;
   font-size: 16px;
+}
+.info .netprice details{
+  font-size: 20px;
+  
 }
 .product_row .productitem{
   border-right: 1px solid transparent !important;
@@ -841,4 +845,167 @@ footer .copyright ul li svg {
   display: block;
   margin: auto;
   font-weight: 600;
+}
+.productModel .btn{
+   margin-top: -18px;
+  font-size: 20px !important;
+margin-left: 710px;
+
+
+
+min-width: 40px !important;
+height: 40px !important;
+width: 40px !important;
+border: 1 px solid #315032 !important;
+border-radius: 50% !important;
+box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+transition: all 0.0s !important;
+}
+
+.productModel .btn svg{
+  color: #e80436;
+  font-weight: bold;
+  pointer-events: none;
+ 
+  opacity: 0.8;
+   font-size: 21px !important;
+ 
+
+}
+.productModel .btn:hover{
+  background: #e80436 !important;
+   color: #f1f0f0;
+}
+.productModel .btn:hover svg{
+  color: #f1f0f0;
+  background: #e80436 !important;
+}
+.productModel .MuiPaper-elevation{
+  padding: 25px;
+  position:relative;
+  max-width: 900px !important;
+  width: 800px !important;
+}
+.productModel h4{
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.productModel .actions button{
+  color: #315032 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+}
+.productModel .actions button svg{
+  font-size: 18px !important;
+   font-weight: 600 !important;
+}
+.productZoom{
+  width: 100%;
+  height: auto;
+
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+
+}
+.zoomSliderBig{
+  width: 100% !important;
+}
+.zoomSlider{
+  padding-top: 30px;
+}
+.zoomSlider .slick-slide{
+  padding-right: 20px !important;
+}
+.zoomSlider *{
+  outline: none !important;
+}
+.zoomSlider .item{
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.zoomSlider .slick-current .item{
+  border: 2px solid #3bb77e !important;
+}
+.zoomSlider .slick-arrow{
+  top: 55% !important;
+  zoom: 80% !important;
+}
+.zoomSlider .slick-arrow.slick-next{
+  right: -2% !important;
+}
+
+.zoomSlider .slick-arrow.slick-prev{
+  left: -5% !important;
+}
+.badge {
+  background: #e5f8ed;
+  color: #16b858;
+  margin-left: 9px;
+  display: inline-block;
+  padding: 7px 10px;
+}
+.p{
+  color: #5f9261;
+   margin-left: 9px;
+}
+.details{
+  margin-left: 9px;
+}
+.btn-blue{
+  background: #315032 !important;
+  color: white !important;
+   font-weight: 400 !important;
+  text-transform: capitalize !important;
+}
+.btn-big{
+  font-size: 15px !important;
+  padding: 7px 28px !important;
+
+}
+.btn-small{
+  font-size: 12px !important;
+  color: #315032 !important;
+  font-weight: 400 !important;
+   text-transform: capitalize !important;
+}
+.btn-small svg{
+  font-size: 18px !important;
+  margin-right: 4px;
+  color: #315032;
+  font-weight: 600 !important;
+}
+.btn-round{
+  border-radius: 30px !important;
+ 
+}
+.quantityDropdown{
+  width:150px;
+   gap:10px !important;
+}
+.quantityDropdown button{
+  min-width: 40px !important;
+  width:  40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background: #b0d7b1 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #315032;
+}
+button{
+  text-transform: capitalize !important;
+}
+.quantityDropdown button svg{
+  color: #315032;
+}
+.quantityDropdown input{
+  width: 27px;
+   border: 0px;
+   background: transparent;
+   outline: none !important;
+   color: #315032;
+   text-align: center;
 }

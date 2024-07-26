@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeBanner from '../../HomeBanner';
 import Button from '@mui/material/Button'; // Import Button from Material-UI
 import banner1 from '../../../assets/images/banner1.jpg'; // Assuming it's a JPG file
@@ -17,9 +17,17 @@ import { Pagination } from 'swiper/modules';
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { IoHeartOutline } from "react-icons/io5";
 import HomeCat from '../../HomeCat';
+import ProductModel from '../../ProductModel';
 
 const Home = () => {
- 
+   
+    const [isOpenProductModel, setisOpenProductModel] = useState(false);
+    const viewproductdetails = (id) => {
+         setisOpenProductModel(true)
+    }
+    const closeProductModel = () => {
+        setisOpenProductModel(false);
+    }
     return (
         <>
             <HomeBanner />
@@ -65,7 +73,7 @@ const Home = () => {
                                             <div className="imgWrapper">
                                                 <img src="https://em-cdn.eatmubarak.pk/54955/dish_image/1675858768.jpg" className='w-100' alt="product1" />
                                                 <div className="actions">
-                                                    <Button className="button"><AiOutlineFullscreen/></Button>
+                                                    <Button onClick={() => viewproductdetails(1)} ><AiOutlineFullscreen/></Button>
                                                     <Button className="button"><IoHeartOutline/></Button>
                                                 </div>
                                             </div>
@@ -319,6 +327,8 @@ const Home = () => {
                                             </div>
                                 </div>
                                 
+
+                                
                                 <div className="item productitem">
                                             <div className="imgWrapper">
                                                 <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-kausar-broken-basmati-rice-5ee09a36efb0b.png" className='w-100' alt="product1" />
@@ -374,6 +384,12 @@ const Home = () => {
                     
                 </div>
             </section>
+
+            {
+                isOpenProductModel === true && <ProductModel closeProductModel={closeProductModel} />
+            }
+
+           {/*<ProductModel/>*/} 
         </>
     );
 };
